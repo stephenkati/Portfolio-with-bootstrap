@@ -2,8 +2,14 @@
 
 body {
   font-family: "Inter", sans-serif;
-  /* padding: 10px; */
+  color: #344563;
   width: 100%;
+}
+
+.nav-link {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: #344563;
 }
 
 section {
@@ -23,25 +29,19 @@ section#about-me {
   padding: 0;
 }
 
-#sect-main {
-  height: calc(100vh + 100px);
-  margin-top: -130px;
-  background-image: url(/images/headerilustrationdesktop.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+.list-item a i {
+  font-size: 20px;
+  color: #0e0d0d;
+}
+
+.fa-angle-down {
+  border: 1px solid rgb(31, 31, 31);
+  border-radius: 50% 50%;
 }
 
 #about-me-1,
 #about-me-2 {
   padding: 0 var(--main-padding);
-}
-
-#about-me-1 {
-  background-image: url(images/illustration-about\ me-1-desktop@2x.png),
-    url(images/illustration-about-me-2-desktop@2x.png);
-  background-position: top right, bottom left;
-  background-repeat: no-repeat;
-  background-size: 15%;
 }
 
 #sect-main h1,
@@ -66,7 +66,6 @@ section#about-me {
   font-size: 18px;
   line-height: 26px;
   text-align: center;
-  width: 60%;
   margin: 0 auto;
 }
 
@@ -158,15 +157,6 @@ textarea {
   padding-top: 1em;
 }
 
-#contact {
-  background-image: url(images/Form-left-bottom.png),
-    url(images/illustration-2-contact-form-desktop@2x.png),
-    url(images/Form-bottom-right.png);
-  background-position: 0% 95%, 25% 80%, 100% 98%;
-  background-repeat: no-repeat;
-  background-size: 15%;
-}
-
 #contact h3 {
   font-style: normal;
   font-weight: 700;
@@ -195,4 +185,80 @@ hr {
 
 :root {
   --main-padding: 10%;
+}
+
+@media only screen and (max-width: 450px){
+  /* top section background */
+  #sect-main {
+    margin-top: 5px;
+    background-image: url(/images/headerilustrationdesktop.png);
+    background-repeat: no-repeat;
+    background-size: 170%;
+    background-position: 40% -5%;
+  }
+
+  /* aboutme background */
+  #about-me-1 {
+    background-image: url(images/illustration-about\ me-1-desktop@2x.png),
+      url(images/illustration-about-me-2-desktop@2x.png);
+    background-position: 106% 10%, -8% 89%;
+    background-repeat: no-repeat;
+    background-size: 15%;
+  }
+
+	 /* background image for small screens */
+   #contact {
+    background-image: url(images/Form-bottom-right.png);
+    background-position: 103% 98%;
+    background-repeat: no-repeat;
+    background-size: 15%;
+  }
+}
+
+@media only screen and (min-width: 451px){
+  /* top section background */
+  #sect-main {
+    height: calc(100vh + 280px);
+    margin-top: -130px;
+    background-image: url(/images/headerilustrationdesktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* aboutme background */
+  #about-me-1 {
+    background-image: url(images/illustration-about\ me-1-desktop@2x.png),
+      url(images/illustration-about-me-2-desktop@2x.png);
+    background-position: top right, bottom left;
+    background-repeat: no-repeat;
+    background-size: 15%;
+  }
+
+  /* background image for large screens */
+	#contact {
+    background-image: 
+      url(images/Form-left-bottom.png),
+      url(images/illustration-2-contact-form-desktop@2x.png),
+      url(images/Form-bottom-right.png);
+    background-position: 0% 95%, 25% 80%, 100% 98%;
+    background-repeat: no-repeat;
+    background-size: 15%;
+  }
+}
+
+/* media query for p in top section and aboutme */
+@media only screen and (max-width: 677px){
+  #sect-main p,
+  #about-me p{
+    width: 100%;
+  }
+}
+
+/* media query for p in top section and aboutme */
+@media only screen and (min-width: 677px){
+  #sect-main p,
+  #about-me p{
+    width: 60%;
+  }
 }
