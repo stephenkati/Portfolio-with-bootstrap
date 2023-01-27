@@ -17,32 +17,27 @@
   </head>
   <body>
     <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg ">
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="smallscreenmenu d-sm-block d-lg-none">
+          <ul class=" list-group list-group-horizontal list-unstyled">
+            <li class="list-item"> <a href="" class="text-decoration-none">Welcome</a> </li>
+            <li class="list-item ms-auto"><i class="fa-sharp fa-solid fa-bars"></i></li>
+          </ul>
+        </div>
         <div class="container-fluid">
-          <button
-            class="navbar-toggler "
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon dark"></span>
-          </button>
           <div
-            class="collapse navbar-collapse justify-content-center"
+            class="collapse navbar-collapse justify-content-center "
             id="navbarNav"
           >
             <ul class="navbar-nav gap-4 ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
+                <a class="nav-link" href="#sect-main">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about-me">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -51,8 +46,8 @@
     </div>
 
     <div
-      class="container-fluid d-flex flex-column align-items-center justify-content-center text-center"
-    >
+      class="container-fluid d-flex flex-column align-items-center justify-content-center text-center main"
+      data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="0" class="scrollspy-example" tabindex="0">
       <section
         class="d-flex gap-4 flex-column align-items-center justify-content-center"
         id="sect-main"
@@ -231,22 +226,6 @@
               </div>
             </div>
               
-          <!-- <div class="card col-lg-4 col-md-6 col-sm-12 p-0 bg-light">
-            <div class="card-img-top bg-light" alt="..."> </div>
-            <div
-              class="card-body pt-4 d-flex flex-column gap-3 m-0 align-items-center justify-content-start card-body-card"
-            >
-              <h5 class="card-title">Multi-Post Stories <br />Gain+Glory</h5>
-              <ul class="list-group list-group-horizontal list-unstyled gap-1">
-                <li class="list-item bg-light p-1 rounded">Ruby on rails</li>
-                <li class="list-item bg-light p-1 rounded">css</li>
-                <li class="list-item bg-light p-1 rounded">JavaScript</li>
-                <li class="list-item bg-light p-1 rounded">html</li>
-              </ul>
-              <a href="#" class="btn btn-success p-2">See more</a>
-            </div>
-          </div> -->
-          <!-- </div> -->
         </div>
       </section>
 
@@ -351,7 +330,7 @@
         </div>
       </section>
 
-      <section id="contact" class="d-flex flex-column align-items-center justify-content-center">
+      <section id="contact" class="d-flex flex-column align-items-center justify-content-center sm-pb-0">
         <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-12">
             <h3 class="">
@@ -396,7 +375,9 @@
             </form>
           </div>
         </div>
+        <p class="email d-lg-none d-sm-block">stephenkatuli@gmail.com</p>
       </section>
+
       <hr>
       <section id="footer" class="d-flex justify-content-center align-items-center">
          <ul class="list-group list-group-horizontal list-unstyled gap-3">

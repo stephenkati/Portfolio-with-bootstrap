@@ -6,6 +6,20 @@ body {
   width: 100%;
 }
 
+.main {
+  position: relative;
+}
+
+.smallscreenmenu {
+  width: 90%;
+}
+
+.text-decoration-none {
+  font-family: "Inter", sans-serif;
+  color: #344563;
+  font-weight: 600;
+}
+
 .nav-link {
   font-family: "Inter", sans-serif;
   font-weight: 600;
@@ -168,12 +182,6 @@ textarea {
   padding-top: 50px;
 }
 
-hr {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
 #footer {
   height: 50px;
 }
@@ -213,6 +221,15 @@ hr {
     background-repeat: no-repeat;
     background-size: 15%;
   }
+
+  .email {
+    font-size: 16px;
+    padding-bottom: 0;
+  }
+
+  #footer {
+    padding-bottom: 300px;
+  }
 }
 
 @media only screen and (min-width: 451px){
@@ -244,6 +261,12 @@ hr {
     background-position: 0% 95%, 25% 80%, 100% 98%;
     background-repeat: no-repeat;
     background-size: 15%;
+  }
+
+  hr {
+    width: 100%;
+    padding: 0;
+    margin: 0;
   }
 }
 
