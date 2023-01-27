@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #344563;
+  width: 100%;
+}
+
+.main {
+  position: relative;
+}
+
+.smallscreenmenu {
+  width: 90%;
+}
+
+.text-decoration-none {
+  font-family: "Inter", sans-serif;
+  color: #344563;
+  font-weight: 600;
+}
+
+.nav-link {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: #344563;
+}
+
+section {
+  width: 100%;
+  padding: 0 var(--main-padding);
+}
+
+#section-main,
+#about-me,
+#contact {
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+section#about-me {
+  padding: 0;
+}
+
+.list-item a i {
+  font-size: 20px;
+  color: #0e0d0d;
+}
+
+.fa-angle-down {
+  border: 1px solid rgb(31, 31, 31);
+  border-radius: 50% 50%;
+}
+
+#about-me-1,
+#about-me-2 {
+  padding: 0 var(--main-padding);
+}
+
+#sect-main h1,
+#sect-main .tagline {
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  margin: 0 auto;
+  white-space: nowrap;
+  animation: typing 7s steps(23), blink-caret 0.75s step-end infinite;
+}
+
+#sect-main p,
+#about-me p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#sect-main .tagline {
+  color: #36b37e;
+}
+/* card layout and cards */
+.work-section {
+  width: 100%;
+}
+
+.card {
+  height: 450px;
+
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
+}
+
+.card,
+.card-body {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #fff;
+}
+.card-img-top {
+  height: 50%;
+}
+
+.card-body-card {
+  background-color: #fff;
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.card-body li {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.btn {
+  max-width: 200px;
+  margin: 0;
+  padding: 5px;
+}
+
+.card-lang {
+  height: 330px;
+}
+
+.card-lang .card-body {
+  background-color: transparent !important;
+}
+
+.image {
+  width: 122px;
+  height: 122px;
+}
+
+.card-lang li {
+  font-weight: 600;
+  font-size: 12px;
+  background-color: #fff;
+}
+
+form {
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  height: 48px;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+}
+
+#about-me h2,
+#works h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 30px;
+  padding-top: 1em;
+}
+
+#contact h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: start;
+  color: #172b4d;
+  padding: 0 20px;
+  padding-top: 50px;
+}
+
+#footer {
+  height: 50px;
+}
+
+#sect-main .list-item,
+#footer .list-item {
+  font-size: 30px;
+}
+
+:root {
+  --main-padding: 10%;
+}
+
+@media only screen and (max-width: 450px){
+  /* top section background */
+  #sect-main {
+    margin-top: 5px;
+    background-image: url(/images/headerilustrationdesktop.png);
+    background-repeat: no-repeat;
+    background-size: 170%;
+    background-position: 40% -5%;
+  }
+
+  /* aboutme background */
+  #about-me-1 {
+    background-image: url(images/illustration-about\ me-1-desktop@2x.png),
+      url(images/illustration-about-me-2-desktop@2x.png);
+    background-position: 106% 10%, -8% 89%;
+    background-repeat: no-repeat;
+    background-size: 15%;
+  }
+
+	 /* background image for small screens */
+   #contact {
+    background-image: url(images/Form-bottom-right.png);
+    background-position: 103% 98%;
+    background-repeat: no-repeat;
+    background-size: 15%;
+  }
+
+  .email {
+    font-size: 16px;
+    padding-bottom: 0;
+  }
+
+  #footer {
+    padding-bottom: 300px;
+  }
+}
+
+@media only screen and (min-width: 451px){
+  /* top section background */
+  #sect-main {
+    height: calc(100vh + 280px);
+    margin-top: -130px;
+    background-image: url(/images/headerilustrationdesktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* aboutme background */
+  #about-me-1 {
+    background-image: url(images/illustration-about\ me-1-desktop@2x.png),
+      url(images/illustration-about-me-2-desktop@2x.png);
+    background-position: top right, bottom left;
+    background-repeat: no-repeat;
+    background-size: 15%;
+  }
+
+  /* background image for large screens */
+	#contact {
+    background-image: 
+      url(images/Form-left-bottom.png),
+      url(images/illustration-2-contact-form-desktop@2x.png),
+      url(images/Form-bottom-right.png);
+    background-position: 0% 95%, 25% 80%, 100% 98%;
+    background-repeat: no-repeat;
+    background-size: 15%;
+  }
+
+  hr {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+/* media query for p in top section and aboutme */
+@media only screen and (max-width: 677px){
+  #sect-main p,
+  #about-me p{
+    width: 100%;
+  }
+}
+
+/* media query for p in top section and aboutme */
+@media only screen and (min-width: 677px){
+  #sect-main p,
+  #about-me p{
+    width: 60%;
+  }
+}
