@@ -211,6 +211,9 @@ upload it to your github main branch
 👤 **Queenter Juma**
 - GitHub: [@githubhandle](https://github.com/QueenterJuma)
 
+👤 **Damilare Adepoju**
+- GitHub: [@githubhandle](https://github.com/adamilare)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
